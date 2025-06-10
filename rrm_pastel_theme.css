@@ -1,0 +1,35 @@
+:root {
+  --crimson-flame: #dc5a6d;
+  --spiral-gold: #f9d85c;
+  --ocean-midnight: #6fa6d0;
+  --ash-violet: #b3a5d3;
+  --ivory-cloud: #faf9f9;
+}
+
+body {
+  background-color: var(--ivory-cloud);
+  color: #333;
+  font-family: 'Georgia', serif;
+}
+
+.header {
+  background-color: var(--crimson-flame);
+  color: white;
+}
+
+.navbar {
+  background-color: var(--ocean-midnight);
+  color: white;
+}
+
+.quote-block {
+  background-color: var(--ash-violet);
+  color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.footer {
+  background-color: var(--spiral-gold);
+  color: black;
+}
