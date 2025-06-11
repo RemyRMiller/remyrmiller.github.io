@@ -1,0 +1,118 @@
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #f8f2f0;
+  color: #5a0000;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Spiral image only in this layout section, scrolling with content */
+.spiral-layout {
+  background-image: url('spiral-rose-bg.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding-top: 60px;
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  margin: 0;
+}
+
+.top-banner {
+  background-color: #5a0000;
+  height: 320px;
+  position: relative;
+  z-index: 2;
+}
+
+.remy-logo-large {
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 280px;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+nav {
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  transform: translateY(-50%);
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2rem;
+  z-index: 3;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+
+.quote {
+  position: absolute;
+  max-width: 500px;
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  color: #5a0000;
+}
+
+.q1 {
+  top: 260px;
+  left: 52%;
+  transform: translateX(-50%);
+}
+
+.q2 {
+  top: 430px;
+  left: 38%;
+  transform: translateX(-50%);
+}
+
+.q3 {
+  top: 600px;
+  left: 60%;
+  transform: translateX(-50%);
+}
+
+.coming {
+  top: 80px;
+  left: 120px;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #5a0000;
+}
+
+.attribution {
+  text-align: right;
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 0.75rem;
+  opacity: 0.9;
+  color: #3e0000;
+}
+
+footer {
+  position: absolute;
+  right: 3rem;
+  bottom: 2rem;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1.8rem;
+  color: #5a0000;
+}
+
+.footer-link {
+  color: #5a0000;
+  text-decoration: none;
+}
