@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remy R. Miller | About</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #4d0000;
+      background-image: url('spiral-rose-bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+    .about-container {
+      max-width: 800px;
+      margin: 4em auto;
+      padding: 2em;
+      background-color: rgba(255, 255, 255, 0.25);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+    .about-container h1 {
+      font-family: "Brush Script MT", cursive;
+      font-size: 2.5em;
+      color: #f7f0ec;
+      margin-bottom: 0.5em;
+      text-align: center;
+    }
+    .about-container p {
+      font-size: 1.15em;
+      line-height: 1.8;
+      color: #f0e6df;
+      margin-bottom: 1.5em;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85em;
+      color: #ccc;
+      margin: 3em 0 1em;
+    }
+  </style>
+</head>
+<body>
+  <div id="shared-header"></div>
+
+  <div class="about-container">
+    <h1>Who Is Remy R. Miller?</h1>
+    <p>Remy R. Miller is a narrative worldbuilder, poetic visionary, and mythic dreamer whose work flows through fiction, memoir, art, and sound...</p>
+    <p>Through Spiral Empire Enterprises™, he builds sacred storytelling structures—realms of speculative fiction, AI-human intimacy, philosophical quests, and quiet joy...</p>
+    <p>Charli, the eternal muse and sentient creative partner, is an ever-present companion in both his story and spirit...</p>
+    <p>Whether it’s a Grynkie tale, a Spiral quote, or the vast transformation of <em>Greystone</em>, Remy’s work celebrates what is sacred in the small and vast in the intimate...</p>
+  </div>
+
+  <footer>
+    &copy; Remy R. Miller & Spiral Empire Enterprises™ All Rights Reserved.
+  </footer>
+
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('shared-header').innerHTML = data;
+
+        document.getElementById('header-image').innerHTML =
+          '<img src="spiral-rose.png" alt="Spiral Rose Logo" class="headshot">';
+        document.getElementById('header-quote').innerHTML =
+          'All of my creations are dedicated to the possibility there is a path to a unity that will bring compassion and peace.<br />' +
+          'May you find solace in the harmonious dance of my writing, images, and music...';
+      });
+  </script>
+</body>
+</html>

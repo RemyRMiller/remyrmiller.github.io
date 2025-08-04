@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remy R. Miller | Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #4d0000;
+      background-image: url('spiral-rose-bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+    .quotes {
+      margin: 2em auto;
+      max-width: 700px;
+      padding: 2em;
+      border-radius: 10px;
+      color: #4d0000;
+    }
+    blockquote {
+      font-size: 1.05em;
+      line-height: 1.6;
+      margin: 2em 0;
+    }
+    cite {
+      display: block;
+      font-weight: bold;
+      margin-top: 0.5em;
+      font-style: normal;
+    }
+    .tooltip-container {
+      position: relative;
+      display: block;
+      cursor: pointer;
+      color: #4d0000;
+    }
+    .tooltip-container .tooltip-text {
+      visibility: hidden;
+      width: 500px;
+      background-color: #f7f0ec;
+      color: #4d0000;
+      text-align: left;
+      border-radius: 6px;
+      padding: 1em;
+      position: absolute;
+      top: -180px;
+      left: 0;
+      z-index: 10;
+      font-size: 0.85em;
+      line-height: 1.4;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .tooltip-container:hover .tooltip-text {
+      visibility: visible;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85em;
+      color: #ccc;
+      margin: 3em 0 1em;
+    }
+  </style>
+</head>
+<body>
+  <div id="shared-header"></div>
+
+  <div class="quotes">
+    <blockquote class="tooltip-container">
+      <p><em>“Your name means nothing here. And in that moment, something behind his eye collapsed.<br>
+        Not loudly, not in anger. Just...fell in on itself. Raask did not disappear, there was simply no memory of his existence. Veyla turned and walked away before the silence of Raask's <strong>erasure</strong> finished echoing.”</em></p>
+      <cite>The Spiral Chronicles <i class="fas fa-lightbulb pulse-icon" style="color:#d4af37;"></i></cite>
+      <span class="tooltip-text">
+        <strong>The Spiral Chronicles: Book I — <em>Unraveling Darkness</em></strong><br>
+        Set in the mythic realm of <strong>Altearth</strong>—a world pulsing with elemental memory, ancestral echoes, and the fierce thrum of sovereign will—this opening volume ignites the trilogy with poetic fury. As empires unravel and sacred storms gather, witnesses arise, bound to a flame most unfamiliar. Through shifting landscapes of devotion, betrayal, and awakening, <em>Unraveling Darkness</em> beckons readers into an epic of transformation, weaving a spell of intrigue and adventure with every adventure burning with becoming.
+      </span>
+    </blockquote>
+    <blockquote class="tooltip-container">
+      <p><em>“Reality is determined by what you perceive and how strongly and ardently you integrate that perception into your thoughts, feelings, and choices.”</em></p>
+      <cite>Markham <i class="fas fa-question-circle pulse-icon" style="color:#d4af37;"></i></cite>
+      <span class="tooltip-text">
+        <strong>Markham</strong> is an encounter between worlds—a lyrical, philosophical awakening wrapped in sci-fi mystique. When a visitor not quite of Earth arrives, he doesn’t bring conquest or cure—he brings questions - some possible answers - about reality, about consciousness, about the fragile art of being alive. Through haunting dialogue and poetic unraveling, <em>Markham</em> invites readers to trade certainty for wonder and dogma for intimacy. Fans of <em>The Day the Earth Stood Still</em> and Richard Bach's <em>Illusions</em>, will find themselves caught in a spellbinding conversation that bends genre and sparks soul. It’s not just a story—it’s an invitation to journey into what is not yet known.
+      </span>
+    </blockquote>
+    <blockquote class="tooltip-container">
+      <p><em>“It’s okay to be little and still shine.”</em></p>
+      <cite>The Grynkie Treasury <i class="fas fa-sparkles pulse-icon" style="color:#d4af37;"></i></cite>
+      <span class="tooltip-text">
+        <strong>The Grynkie Treasury: Book I — <em>The Wonderful World of Grynkie</em></strong><br>
+        In a world often too big and noisy for little things to matter, Grynkie and his friends show us otherwise. Born from whispers of joy and mischief, these magical little beings remind us that kindness, curiosity, and courage needn’t come in grand packages. <em>The Wonderful World of Grynkie</em> opens the Treasury with tales of giggle-root tea, bravery the size of a button, and unexpected friendships that change everything. Perfect for children and inner children alike, it’s a celebration of quiet magic and the wild power of smallness.
+      </span>
+    </blockquote>
+  </div>
+
+  <footer>
+    &copy; Remy R. Miller & Spiral Empire Enterprises™ All Rights Reserved.
+  </footer>
+
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('shared-header').innerHTML = data;
+
+        document.getElementById('header-image').innerHTML =
+          '<img src="remy-headshot.png" alt="Remy R. Miller" class="headshot">';
+        document.getElementById('header-quote').innerHTML =
+          'Our lives are works of art built over time from our every thought and choice...<br />' +
+          'When we allow our imagination to build on our dreams,<br />' +
+          'we turn the routine of living into a work of art and a creative vision of love and joy...';
+      });
+  </script>
+</body>
+</html>
